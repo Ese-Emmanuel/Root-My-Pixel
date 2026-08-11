@@ -39,6 +39,14 @@
       "buildDisplay": "CP2A.260705.006",
       "exploitAsset": "exploits/panther-CP2A.260705.006.so",
       "kmi": "android14-6.1"
+    },
+    {
+      "profileId": "husky-CP2A.260705.006",
+      "codename": "husky",
+      "kernelRelease": "6.1.157-android14-11",
+      "buildDisplay": "CP2A.260705.006",
+      "exploitAsset": "exploits/husky-CP2A.260705.006.so",
+      "kmi": "android14-6.1"
     }
   ]
 }
