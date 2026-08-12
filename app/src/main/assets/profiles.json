@@ -47,6 +47,22 @@
       "buildDisplay": "CP2A.260705.006",
       "exploitAsset": "exploits/husky-CP2A.260705.006.so",
       "kmi": "android14-6.1"
+    },
+    {
+      "profileId": "shiba-CP2A.260705.006",
+      "codename": "shiba",
+      "kernelRelease": "6.1.157-android14-11",
+      "buildDisplay": "CP2A.260705.006",
+      "exploitAsset": "exploits/shiba-CP2A.260705.006.so",
+      "kmi": "android14-6.1"
+    },
+    {
+      "profileId": "cheetah-CP2A.260705.006",
+      "codename": "cheetah",
+      "kernelRelease": "6.1.157-android14-11",
+      "buildDisplay": "CP2A.260705.006",
+      "exploitAsset": "exploits/cheetah-CP2A.260705.006.so",
+      "kmi": "android14-6.1"
     }
   ]
 }

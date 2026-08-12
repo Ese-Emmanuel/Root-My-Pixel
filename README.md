@@ -43,8 +43,10 @@ Root My Pixel lets you *temporarily* gain root access with ReSukiSU in just one 
 | **Pixel 10 Pro Fold** | `rango`    | `CP2A.260705.006` | `android15-6.6` | ✅      |
 | **Pixel 10a**         | `stallion` | `CP2A.260705.006` | `android15-6.6` | ⏳      |
 | **Pixel 8 Pro**       | `husky`    | `CP2A.260705.006` | `android14-6.1` | ✅      |
-| **Pixel 7**           | `panther`  | `CP2A.260705.006` | `android14-6.1` | ✅      |
+| **Pixel 8**           | `shiba`    | `CP2A.260705.006` | `android14-6.1` | ✅      |
 | **Pixel 7a**          | `lynx`     | `CP2A.260705.006` | `android14-6.1` | ✅      |
+| **Pixel 7 Pro**       | `cheetah`  | `CP2A.260705.006` | `android14-6.1` | ✅      |
+| **Pixel 7**           | `panther`  | `CP2A.260705.006` | `android14-6.1` | ✅      |
 
 ---
 
