@@ -126,13 +126,16 @@ private fun MainScreen(
                             style = MaterialTheme.typography.titleLarge,
                         )
                         Text(
-                            text = "Inspired by Root My Galaxy",
+                            text = stringResource(R.string.app_subtitle),
                             style = MaterialTheme.typography.labelMedium.copy(
                                 textDecoration = TextDecoration.Underline,
                             ),
                             color = MaterialTheme.colorScheme.primary,
                             modifier = Modifier.clickable {
-                                val intent = Intent(Intent.ACTION_VIEW, "https://github.com/BuSung-dev/Root-My-Galaxy".toUri())
+                                val intent = Intent(
+                                    Intent.ACTION_VIEW,
+                                    "https://github.com/BuSung-dev/Root-My-Galaxy".toUri()
+                                )
                                 context.startActivity(intent)
                             },
                         )
@@ -343,6 +346,7 @@ private fun ShizukuStatusCard(available: Boolean) {
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(12.dp),
+            verticalAlignment = Alignment.CenterVertically
         ) {
             Icon(
                 imageVector = if (available) Icons.Rounded.Shield else Icons.Rounded.Warning,
@@ -351,13 +355,19 @@ private fun ShizukuStatusCard(available: Boolean) {
                 tint = if (available)
                     MaterialTheme.colorScheme.primary
                 else
-                    MaterialTheme.colorScheme.error,
+                    MaterialTheme.colorScheme.error
             )
             Spacer(modifier = Modifier.width(8.dp))
             Text(
-                text = if (available) "Shizuku shell access active" else "Shizuku not connected — exploit may fail (needs ADB shell)",
+                text = if (available) {
+                    stringResource(R.string.shikuzu_shell_active)
+                } else {
+                    stringResource(
+                        R.string.shikuzu_shell_not_active
+                    )
+                },
                 style = MaterialTheme.typography.bodyMedium,
-                fontSize = 12.sp,
+                fontSize = 12.sp
             )
         }
     }
@@ -386,14 +396,14 @@ private fun ReSukiSuManagerCard(installed: Boolean, context: android.content.Con
                 )
                 Spacer(modifier = Modifier.width(8.dp))
                 Text(
-                    text = "ReSukiSU Manager not installed",
+                    text = stringResource(R.string.missing_manager_title),
                     style = MaterialTheme.typography.bodyMedium,
                     fontWeight = FontWeight.Bold,
                 )
             }
             Spacer(modifier = Modifier.height(8.dp))
             Text(
-                text = "You need the ReSukiSU Manager app to manage root permissions.",
+                text = stringResource(R.string.missing_manager_description),
                 style = MaterialTheme.typography.bodySmall,
                 color = MaterialTheme.colorScheme.onSurfaceVariant,
             )
@@ -458,7 +468,7 @@ private fun DeveloperSocialCard(modifier: Modifier = Modifier) {
 
                 Column(modifier = Modifier.weight(1f)) {
                     Text(
-                        text = "DEVELOPED BY",
+                        text = stringResource(R.string.developed_by),
                         style = MaterialTheme.typography.labelSmall,
                         color = MaterialTheme.colorScheme.primary,
                         letterSpacing = 0.5.sp,
@@ -480,13 +490,17 @@ private fun DeveloperSocialCard(modifier: Modifier = Modifier) {
                 // Threads Pill Chip
                 Surface(
                     onClick = {
-                        val intent = Intent(Intent.ACTION_VIEW, "https://www.threads.com/@alex193a".toUri())
+                        val intent =
+                            Intent(Intent.ACTION_VIEW, "https://www.threads.com/@alex193a".toUri())
                         context.startActivity(intent)
                     },
                     modifier = Modifier.weight(1f),
                     shape = MaterialTheme.shapes.medium,
                     color = MaterialTheme.colorScheme.surfaceContainerHighest,
-                    border = BorderStroke(1.dp, MaterialTheme.colorScheme.outlineVariant.copy(alpha = 0.4f)),
+                    border = BorderStroke(
+                        1.dp,
+                        MaterialTheme.colorScheme.outlineVariant.copy(alpha = 0.4f)
+                    ),
                 ) {
                     Row(
                         modifier = Modifier.padding(horizontal = 12.dp, vertical = 10.dp),
@@ -511,13 +525,17 @@ private fun DeveloperSocialCard(modifier: Modifier = Modifier) {
                 // Twitter Pill Chip
                 Surface(
                     onClick = {
-                        val intent = Intent(Intent.ACTION_VIEW, "https://twitter.com/alex193a".toUri())
+                        val intent =
+                            Intent(Intent.ACTION_VIEW, "https://twitter.com/alex193a".toUri())
                         context.startActivity(intent)
                     },
                     modifier = Modifier.weight(1f),
                     shape = MaterialTheme.shapes.medium,
                     color = MaterialTheme.colorScheme.surfaceContainerHighest,
-                    border = BorderStroke(1.dp, MaterialTheme.colorScheme.outlineVariant.copy(alpha = 0.4f)),
+                    border = BorderStroke(
+                        1.dp,
+                        MaterialTheme.colorScheme.outlineVariant.copy(alpha = 0.4f)
+                    ),
                 ) {
                     Row(
                         modifier = Modifier.padding(horizontal = 12.dp, vertical = 10.dp),
