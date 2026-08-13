@@ -44,10 +44,15 @@ CC="$ANDROID_NDK_HOME/toolchains/llvm/prebuilt/$HOST_PLATFORM/bin/aarch64-linux-
 
 # ── Supported devices targets ─────────────────────────────────
 TARGETS=(
+  "rango-CP2A.260705.006"     # Pixel 10 Pro Fold
   "blazer-CP2A.260705.006"    # Pixel 10 Pro
   "mustang-CP2A.260705.006"   # Pixel 10 Pro XL
-  "rango-CP2A.260705.006"     # Pixel 10 Pro Fold
-  "lynx-CP2A.260605.012"      # Pixel 7a
+  "comet-CP2A.260705.006"     # Pixel 9 Pro Fold
+  "husky-CP2A.260705.006"     # Pixel 8 Pro
+  "shiba-CP2A.260705.006"     # Pixel 8
+  "lynx-CP2A.260705.006"      # Pixel 7a
+  "cheetah-CP2A.260705.006"   # Pixel 7 Pro
+  "panther-CP2A.260705.006"   # Pixel 7
 )
 
 echo ""

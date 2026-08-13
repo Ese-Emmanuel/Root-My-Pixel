@@ -63,6 +63,14 @@
       "buildDisplay": "CP2A.260705.006",
       "exploitAsset": "exploits/cheetah-CP2A.260705.006.so",
       "kmi": "android14-6.1"
+    },
+    {
+      "profileId": "comet-CP2A.260705.006",
+      "codename": "comet",
+      "kernelRelease": "6.1.157-android14-11",
+      "buildDisplay": "CP2A.260705.006",
+      "exploitAsset": "exploits/comet-CP2A.260705.006.so",
+      "kmi": "android14-6.1"
     }
   ]
 }
