@@ -35,8 +35,8 @@ Root My Pixel lets you *temporarily* gain root access with ReSukiSU in just one 
 
 ## Supported Devices & Build Profiles
 
-| Device                | Codename   | Supported Build   | Kernel KMI      | Tested |
-|:----------------------|:-----------|:------------------|:----------------|:-------|
+| Device                | Codename   | Supported Builds   | Kernel KMI      | Tested |
+|:----------------------|:-----------|:------------------|:----------------|:--------|
 | **Pixel 10**          | `frankel`  | `CP2A.260705.006` | `android15-6.6` | ⏳      |
 | **Pixel 10 Pro**      | `blazer`   | `CP2A.260705.006` | `android15-6.6` | ✅      |
 | **Pixel 10 Pro XL**   | `mustang`  | `CP2A.260705.006` | `android15-6.6` | ✅      |
@@ -48,6 +48,7 @@ Root My Pixel lets you *temporarily* gain root access with ReSukiSU in just one 
 | **Pixel 7a**          | `lynx`     | `CP2A.260705.006` | `android14-6.1` | ✅      |
 | **Pixel 7 Pro**       | `cheetah`  | `CP2A.260705.006` | `android14-6.1` | ✅      |
 | **Pixel 7**           | `panther`  | `CP2A.260705.006` | `android14-6.1` | ✅      |
+| **Pixel 6a**          | `bluejay`  | `CP2A.260705.006`<br>`CP1A.260405.005` | `android14-6.1` | ✅      |
 
 ---
 
