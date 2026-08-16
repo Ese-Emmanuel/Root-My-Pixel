@@ -46,6 +46,7 @@ CC="$ANDROID_NDK_HOME/toolchains/llvm/prebuilt/$HOST_PLATFORM/bin/aarch64-linux-
 TARGETS=(
   "rango-CP2A.260705.006"     # Pixel 10 Pro Fold
   "blazer-CP2A.260705.006"    # Pixel 10 Pro
+  "frankel-CP2A.260705.006"   # Pixel 10
   "mustang-CP2A.260705.006"   # Pixel 10 Pro XL
   "comet-CP2A.260705.006"     # Pixel 9 Pro Fold
   "husky-CP2A.260705.006"     # Pixel 8 Pro
