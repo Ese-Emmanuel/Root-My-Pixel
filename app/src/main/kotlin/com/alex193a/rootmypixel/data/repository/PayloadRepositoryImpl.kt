@@ -106,7 +106,10 @@ class PayloadRepositoryImpl(
         }
 
         // Extract ksud binary from assets
-        val ksudAssetPath = "${PayloadLocalDataSource.KSUD_ASSET_PREFIX}ksud-${profile.kmi}"
+        // One binary covers every KMI: it embeds a kernelsu.ko per KMI and picks
+        // between them from the --kmi it is passed at late-load, which is where
+        // profile.kmi is used.
+        val ksudAssetPath = "${PayloadLocalDataSource.KSUD_ASSET_PREFIX}ksud"
         val ksudFile = File(payloadDir, "ksud")
         ksudFile.delete()
         val ksudResult = localDataSource.extractAsset(
