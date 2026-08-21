@@ -32,17 +32,13 @@ class PayloadRepositoryImpl(
 
                 val targetCodename = snapshot.device.trim()
                 val targetKernelRel = snapshot.kernelRelease.trim()
-                val targetBuild = snapshot.buildDisplay.trim()
 
                 // /proc/version appends a Git revision to uname -r (for example,
                 // "6.6.118-android15-8-g<sha>"). Profiles intentionally keep the
-                // stable release prefix. A precise OTA build plus that prefix is the
-                // compatibility contract for bundled payloads.
+                // stable release prefix.
                 val exactMatch = profiles.find { profile ->
                     targetCodename.isNotEmpty() &&
                         profile.codename.equals(targetCodename, ignoreCase = true) &&
-                        targetBuild.isNotEmpty() &&
-                        profile.buildDisplay.equals(targetBuild, ignoreCase = true) &&
                         (targetKernelRel == profile.kernelRelease ||
                             targetKernelRel.startsWith("${profile.kernelRelease}-"))
                 }
@@ -52,7 +48,7 @@ class PayloadRepositoryImpl(
                 } else {
                     Result.Error(
                         PayloadError.UnsupportedError(
-                            "No profile for $targetCodename / $targetKernelRel / ${targetBuild.ifEmpty { "unknown build" }}"
+                            "No profile for $targetCodename / $targetKernelRel"
                         )
                     )
                 }

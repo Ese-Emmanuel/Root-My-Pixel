@@ -95,6 +95,24 @@ class PayloadRepositoryImplTest {
     }
 
     @Test
+    fun resolveTarget_differentBuildDisplay_stillMatchesProfile() = runBlocking {
+        val snapshot = DeviceSnapshot(
+            kernelRelease = "6.6.118-android15-9",
+            kernelVersion = "Linux version 6.6.118-android15-9-g690101101069",
+            buildDisplay = "DIFFERENT.BUILD.123",
+            sdkVersion = 36,
+            abi = "arm64-v8a",
+            pageSize = 4096,
+            model = "Pixel 10 Pro XL",
+            device = "mustang",
+        )
+
+        val result = repository.resolveTarget(snapshot)
+        assertTrue(result is Result.Success)
+        assertEquals("mustang-CP2A.260705.006", (result as Result.Success).data.profileId)
+    }
+
+    @Test
     fun resolveTarget_unsupportedDevice_returnsError() = runBlocking {
         val snapshot = DeviceSnapshot(
             kernelRelease = "5.10.0",
