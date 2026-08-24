@@ -121,6 +121,14 @@
       "kmi": "android14-6.1"
     },
     {
+      "profileId": "raven-CP2A.260705.006",
+      "codename": "raven",
+      "kernelRelease": "6.1.157-android14-11",
+      "buildDisplay": "CP2A.260705.006",
+      "exploitAsset": "exploits/raven-CP2A.260705.006.so",
+      "kmi": "android14-6.1"
+    },
+    {
       "profileId": "akita-CP2A.260805.005",
       "codename": "akita",
       "kernelRelease": "6.1.157-android14-11",

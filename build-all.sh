@@ -60,6 +60,7 @@ TARGETS=(
   "bluejay-CP2A.260705.006"   # Pixel 6a (Android 17)
   "bluejay-CP1A.260405.005"   # Pixel 6a (Android 16)
   "oriole-CP2A.260705.006"    # Pixel 6
+  "raven-CP2A.260705.006"     # Pixel 6 Pro
 )
 
 echo ""
