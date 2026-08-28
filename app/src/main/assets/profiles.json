@@ -39,6 +39,7 @@
       "buildDisplay": "CP2A.260705.006",
       "exploitAsset": "exploits/lynx-CP2A.260705.006.so",
       "kmi": "android14-6.1"
+    },
     {
       "profileId": "lynx-CP1A.260505.005",
       "codename": "lynx",
