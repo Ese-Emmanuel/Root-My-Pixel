@@ -54,7 +54,8 @@ TARGETS=(
   "husky-CP2A.260705.006"     # Pixel 8 Pro
   "shiba-CP2A.260705.006"     # Pixel 8
   "akita-CP2A.260805.005"     # Pixel 8a
-  "lynx-CP2A.260705.006"      # Pixel 7a
+  "lynx-CP2A.260705.006"      # Pixel 7a (July 2026 Patch)
+  "lynx-CP1A.260505.005"      # Pixel 7a (May 2026 Patch)
   "cheetah-CP2A.260705.006"   # Pixel 7 Pro
   "panther-CP2A.260705.006"   # Pixel 7
   "bluejay-CP2A.260705.006"   # Pixel 6a (Android 17)
